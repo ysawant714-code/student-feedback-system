@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Feedback System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Student Feedback System</h1>
+
+<div class="container">
+
+<form id="feedbackForm">
+
+<label>Student Name</label>
+<input type="text" id="name" required>
+
+<label>Feedback Type</label>
+
+<select id="type">
+<option>Subject Feedback</option>
+<option>Teacher Feedback</option>
+<option>Event Feedback</option>
+<option>Guest Lecture Feedback</option>
+</select>
+
+<label>Subject / Event / Lecture</label>
+<input type="text" id="topic" required>
+
+<label>Rating</label>
+
+<select id="rating">
+<option>5 - Excellent</option>
+<option>4 - Good</option>
+<option>3 - Average</option>
+<option>2 - Poor</option>
+<option>1 - Very Poor</option>
+</select>
+
+<label>Comment</label>
+<textarea id="comment"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+<!-- Firebase scripts -->
+
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
